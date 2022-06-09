@@ -1,4 +1,4 @@
-import CoverSection from "./components/CoverSection";
+import CoverSection from "./components/CoverSection"
 import AboutSection from "./components/AboutSection";
 import ProductSection from "./components/ProductSection";
 import Why from "./components/Why";

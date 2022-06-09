@@ -2,7 +2,7 @@ import Button from './Button'
 
 const DemoForm = () => {
   return(
-    <section className='bg-primary-normal'>
+    <section className='bg-primary-normal p-20'>
     <h2 className="text-2xl text-dark font-bold">Request a Demo</h2>
     <form name="request-demo-form" method="" action="" className='text-lg '>
                     <div className="flex flex-col">
