@@ -7,7 +7,7 @@ const Why = () => {
   return(
     <section className="p-20 px-36">
       <h2 className="text-2xl text-dark font-bold text-center">Why Choose Our Products?</h2>
-      <div className="flex flex-col md:flex-row space-x-20 my-20">
+      <div className="flex flex-col md:flex-row space-y-10 md:space-x-20 my-20">
         <Card title={"Reliable"} imgSrc={reliableImg}>
         Our products are reliable and will work as intended with no unexpected problems. You can also trust that the we will keep your software up to date and fix any bugs that are found.
         </Card>

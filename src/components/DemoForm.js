@@ -2,27 +2,40 @@ import Button from './Button'
 
 const DemoForm = () => {
   return(
-    <section className='bg-primary-normal p-20'>
-    <h2 className="text-2xl text-dark font-bold">Request a Demo</h2>
-    <form name="request-demo-form" method="" action="" className='text-lg '>
-                    <div className="flex flex-col">
-                        <label htmlFor="first-name" className='mb-1'>First Name</label>
-                        <input type="text" name="first-name" id="first-name" placeholder="Enter your first name" className="rounded-md w-80 bg-gray-200 px-3 py-2 focus:border-blue-500 "
-                        // onChange={handleChange} 
-                        />
+    <section className='bg-primary-normal p-10 md:p-20'>
+    <h2 className="text-2xl text-dark font-bold text-center">Request a Demo</h2>
+    <form name="request-demo-form" method="" action="" className=''>
+                    <div className="grid grid-cols-3 gap-5">
+                    <div>
+                        <label htmlFor="first-name" className="text-sm font-bold leading-none text-gray-800">First Name*</label>
+                        <input name="first-name" aria-label="enter email adress" role="input" type="text" placeholder='Enter your first name' className="bg-gray-200 border rounded focus:outline-none text-base font-normal leading-none text-gray-800 py-3 w-full pl-3 mt-2" />
                     </div>
-                    <div className="field half">
-                        <label htmlFor="email">Email</label>
-                        {/* <input type="email" name="email" id="email" onChange={handleChange}/> */}
+                    <div>
+                        <label htmlFor="last-name" className="text-sm font-bold leading-none text-gray-800">Last Name*</label>
+                        <input name="last-name" aria-label="enter email adress" role="input" type="text" placeholder='Enter your last name' className="bg-gray-200 border rounded focus:outline-none text-base font-normal leading-none text-gray-800 py-3 w-full pl-3 mt-2" />
                     </div>
-                    <div className="field">
-                        <label htmlFor="message">Message</label>
-                        {/* <textarea name="message" id="message" rows="6" onChange={handleChange}></textarea> */}
+                    <div>
+                        <label htmlFor="email" className="text-sm font-bold leading-none text-gray-800">Phone No.*</label>
+                        <input name="email" aria-label="enter email adress" role="input" type="text" placeholder='Enter your business email' className="bg-gray-200 border rounded focus:outline-none text-base font-normal leading-none text-gray-800 py-3 w-full pl-3 mt-2" />
                     </div>
-                    <ul className="actions">
-                        <li><input type="submit" value="Send Message" className="special" /></li>
-                        <li><input type="reset" value="Clear" /></li>
-                    </ul>
+                    <div>
+                        <label htmlFor="first-name" className="text-sm font-bold leading-none text-gray-800">Business Name</label>
+                        <input name="first-name" aria-label="enter email adress" role="input" type="text" placeholder='Enter your first name' className="bg-gray-200 border rounded focus:outline-none text-base font-normal leading-none text-gray-800 py-3 w-full pl-3 mt-2" />
+                    </div>
+                    <div>
+                        <label htmlFor="first-name" className="text-sm font-bold leading-none text-gray-800">Business Email*</label>
+                        <input name="first-name" aria-label="enter email adress" role="input" type="text" placeholder='Enter your first name' className="bg-gray-200 border rounded focus:outline-none text-base font-normal leading-none text-gray-800 py-3 w-full pl-3 mt-2" />
+                    </div>
+                    <div>
+                        <label htmlFor="first-name" className="text-sm font-bold leading-none text-gray-800">Job Title</label>
+                        <input name="first-name" aria-label="enter email adress" role="input" type="text" placeholder='Enter your first name' className="bg-gray-200 border rounded focus:outline-none text-base font-normal leading-none text-gray-800 py-3 w-full pl-3 mt-2" />
+                    </div>
+                    <div>
+                        <label htmlFor="first-name" className="text-sm font-bold leading-none text-gray-800">Any Additional Comments</label>
+                        <input name="first-name" aria-label="enter email adress" role="input" type="text" placeholder='Enter your first name' className="bg-gray-200 border rounded focus:outline-none text-base font-normal leading-none text-gray-800 py-3 w-full pl-3 mt-2" />
+                    </div>
+                      <Button buttonText={"Send"} style={"bg-white text-blue-300"}></Button>
+                    </div>
       </form>
     </section>
   )

@@ -22,6 +22,7 @@ module.exports = {
       },
       backgroundImage: {
         'block-pattern': "url('../src/images/design.png')",
+        'block-pattern-2': "url('../src/images/design2.png')",
         'about-image': "url('../src/images/aboutpic.jpg')",
       },
     },
