@@ -6,27 +6,27 @@ const CoverSection = () => {
     <div>
         <div className="relative">
         <NavBar></NavBar>
-        <div className="bg-primary-dark h-screen w-4/12 absolute top-0 right-0">
-        <div className="bg-block-pattern-2 bg-cover bg-center absolute h-5/6 w-11/12 -left-10 bottom-0"></div>
+        <div className="invisible md:visible bg-primary-dark h-screen w-4/12 absolute top-0 right-0">
+        <div className="invisible md:visible  bg-block-pattern-2 bg-cover bg-center absolute h-5/6 w-11/12 -left-10 bottom-0"></div>
         </div>
        
         </div>
       
-        <section className="flex h-screen w-8/12 bg-white justify-center items-center">
+        <section className="flex h-screen w-full md:w-8/12 bg-white justify-center items-center border-none">
     {/* <div className=""> */}
     <div className=" w-7/12 ">
-                <div className="bg-white shadow rounded w-full">
-                    <p tabIndex={0} role="heading" aria-label="Login to your account" className="text-2xl font-extrabold leading-6 text-gray-800">
+                <div className="bg-white shadow rounded w-full ">
+                    <p tabIndex={0} role="heading" aria-label="Login to your account" className="text-2xl font-extrabold leading-6 text-gray-800 text-center">
                         Login to your LMS account
                     </p>
-                    <p className="text-sm mt-4 font-medium leading-none text-gray-500">
+                    <p className="text-sm mt-4 font-medium leading-none text-gray-500 text-center">
                         Dont have account?{" "}
-                        <span tabIndex={0} role="link" aria-label="Sign up here" className="text-sm font-medium leading-none underline text-gray-800 cursor-pointer">
+                        <span tabIndex={0} role="link" aria-label="Sign up here" className="text-sm font-medium leading-none underline text-gray-800 cursor-pointer text-blue-400">
                             {" "}
                             Sign up here
                         </span>
                     </p>
-                    <button aria-label="Continue with google" className="focus:outline-none focus:ring-2 focus:ring-offset-1 focus:ring-gray-700 py-3.5 px-4 border rounded-lg border-gray-700 flex items-center w-full mt-10">
+                    <button aria-label="Continue with google" className="focus:outline-none focus:ring-2 focus:ring-offset-1 focus:ring-gray-700 py-2 px-4 border rounded-lg border-gray-700 flex items-center w-full mt-10 flex justify-center">
                         <svg width={19} height={20} viewBox="0 0 19 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M18.9892 10.1871C18.9892 9.36767 18.9246 8.76973 18.7847 8.14966H9.68848V11.848H15.0277C14.9201 12.767 14.3388 14.1512 13.047 15.0812L13.0289 15.205L15.905 17.4969L16.1042 17.5173C17.9342 15.7789 18.9892 13.221 18.9892 10.1871Z" fill="#4285F4" />
                             <path d="M9.68813 19.9314C12.3039 19.9314 14.4999 19.0455 16.1039 17.5174L13.0467 15.0813C12.2286 15.6682 11.1306 16.0779 9.68813 16.0779C7.12612 16.0779 4.95165 14.3395 4.17651 11.9366L4.06289 11.9465L1.07231 14.3273L1.0332 14.4391C2.62638 17.6946 5.89889 19.9314 9.68813 19.9314Z" fill="#34A853" />
@@ -45,7 +45,10 @@ const CoverSection = () => {
                         <input placeholder="Enter your email" aria-label="enter email address" role="input" type="email" className="bg-gray-200 border rounded focus:outline-none text-xs font-medium leading-none text-gray-800 py-3 w-full pl-3 mt-2" />
                     </div>
                     <div className="mt-6  w-full">
-                        <label className="text-sm font-medium leading-none text-gray-800">Password</label>
+                        <label className="text-sm font-medium leading-none text-gray-800 flex flex-row justify-between">
+                        <span>Password</span>
+                        <span className=" underline text-blue-400 cursor-pointer">Forgot Password?</span>
+                        </label>
                         <div className="relative flex items-center justify-center">
                             <input placeholder="Enter your password" aria-label="enter Password" role="input" type="password" className="bg-gray-200 border rounded focus:outline-none text-xs font-medium leading-none text-gray-800 py-3 w-full pl-3 mt-2" />
                             <div className="absolute right-0 mt-2 mr-3 cursor-pointer">
@@ -59,7 +62,7 @@ const CoverSection = () => {
                         </div>
                     </div>
                     <div className="mt-8">
-                        <button aria-label="create my account" className="focus:ring-2 focus:ring-offset-2 focus:ring-indigo-700 text-sm font-semibold leading-none text-white focus:outline-none bg-indigo-700 border rounded hover:bg-indigo-600 py-4 w-full">
+                        <button aria-label="create my account" className="focus:ring-2 focus:ring-offset-2 focus:ring-indigo-700 text-sm font-semibold leading-none text-white focus:outline-none bg-primary-normal border rounded hover:bg-indigo-600 py-4 w-full">
                            Login
                         </button>
                     </div>
